@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.box {
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  padding: 25px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #35424a;
+  height: 70px;
+  padding: 15px;
+  border-bottom: 4px solid #e8491d;
+}
+
+header .logo {
+  color: white;
+  font-size: 1.5em;
+  float: left;
+}
+
+header .logo span {
+  color: #e8491d;
+}
+
+header ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  margin-right: 20px;
+}
+
+header ul li a:hover {
+  color: #e2e2e2;
+  /* font-weight: 800; */
+}
+
+.active {
+  color: #e8491d;
+}
+
+main {
+  height: 400px;
+  text-align: center;
+  background-image: url("images/showcase.jpg");
+  background-position-y: -398px;
+  color: white;
+}
+
+main h1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 3.5em;
+}
+
+main p {
+  font-size: 1.5em;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.newsletter {
+  background-color: #35424a;
+  padding: 10px;
+}
+
+.newsletter h2 {
+  float: left;
+  color: white;
+}
+
+.newsletter form {
+  float: right;
+}
+
+.newsletter form input {
+  width: 250px;
+  padding: 10px;
+}
+
+.newsletter form button {
+  background-color: #e8491d;
+  color: white;
+  padding: 12px;
+  border: none;
+}
+
+.services {
+  margin: 10px 0;
+  max-height: 300px;
+}
+
+.services .box {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.services .box img {
+  width: 95px;
+  margin-bottom: 15px;
+}
+
+.services .box h3 {
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #e8491d;
+  height: 80px;
+  color: white;
+  padding: 5px;
+}
+
+footer p {
+  text-align: center;
+  padding: 25px;
+  font-size: 1.1em;
+}
+
+/* about us */
+
+.content {
+  min-height: 400px;
+}
+
+.black {
+  background-color: #35424a;
+  padding: 20px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.about {
+  float: left;
+  width: 70%;
+}
+
+.about h3 {
+  margin-bottom: 25px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.whatwedo {
+  float: right;
+  width: 23%;
+}
+
+.whatwedo h3 {
+  margin-bottom: 20px;
+}
+
+.whatwedo p {
+  font-size: 1em;
+}
+
+/* services */
+
+.services_page {
+  height: 400px;
+}
+
+.service_content {
+  width: 70%;
+  float: left;
+}
+
+.service_content h3 {
+  margin-bottom: 20px;
+}
+
+.service_content .service_box_text {
+  margin-bottom: 15px;
+}
+
+.service_form {
+  float: right;
+  width: 23%;
+}
+
+.service_form h3 {
+  margin-bottom: 15px;
+}
+
+.service_form .input_field {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.service_form button {
+  background-color: #e8491d;
+  padding: 10px;
+  color: white;
+  border: none;
+  width: 80px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  header {
+    /* padding: 10px; */
+    min-height: 100px;
+  }
+  .container {
+    padding: 35px;
+  }
+  .logo {
+    width: 100%;
+    margin-top: -30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+  }
+  header ul {
+    float: none;
+    margin: 0 35%;
+  }
+  header ul li {
+    display: block;
+  }
+  header ul li a {
+    font-size: 1em;
+  }
+  main {
+    background-position-y: -400px;
+    background-position-x: -320px;
+  }
+  main h1 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  main p {
+    font-size: 1.2em;
+  }
+  .newsletter h2,
+  form {
+    float: none;
+  }
+  .newsletter h2 {
+    width: 103%;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .newsletter form {
+    width: 100%;
+  }
+  .newsletter form input {
+    margin: 0 0 10px 0;
+    width: 92%;
+  }
+  .newsletter form button {
+    display: block;
+    width: 100%;
+  }
+  .services {
+    min-height: 700px;
+  }
+  .services .box {
+    width: 100%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  /* about page */
+  .about,
+  .whatwedo {
+    float: none;
+    width: 100%;
+  }
+  .whatwedo {
+    box-sizing: border-box;
+  }
+  /* service page */
+  .services_page {
+    min-height: 900px;
+  }
+  .service_content,
+  .service_form {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+  .service_form {
+    margin: 0 -22px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+  .logo {
+    margin-top: -30px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 100%;
+  }
+  header ul {
+    width: 100%;
+    margin: 0 -25%;
+  }
+  main {
+    background-position-y: -400px;
+    background-position-x: -280px;
+  }
+  main h1 {
+    margin: 10px 0;
+    font-size: 2em;
+  }
+  main p {
+    font-size: 1.2em;
+  }
+  .newsletter h2 {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .newsletter form {
+    width: 100%;
+  }
+  .newsletter form input {
+    margin: 0 0 10px 0;
+    width: 92%;
+  }
+  .newsletter form button {
+    margin: 0 40%;
+  }
+  .services {
+    min-height: 700px;
+  }
+  .services .box {
+    width: 100%;
+  }
+  /* about page */
+  .about,
+  .whatwedo {
+    float: none;
+    width: 100%;
+  }
+  .whatwedo {
+    box-sizing: border-box;
+  }
+  /* services page */
+  .services_page {
+    min-height: 800px;
+  }
+  .service_content {
+    margin-bottom: 20px;
+  }
+  .service_content,
+  .service_form {
+    width: 100%;
+    display: block;
+  }
+  .service_form {
+    margin: 0 -22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+  .services .box {
+    width: 25%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
